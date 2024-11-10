@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="stylesheet" href="Registro.css">
+
+</head>
+<body>
+    <header>
+        <ul class="Navegacion">
+            <li><a href="../Inicio/Inicio.html"><img src="../Inicio/Vaca.jpg" width="20px"></a></li>
+            <li><input type="search" placeholder="Buscar..."></li>
+            <li><a href="../Inicio/Perfil.html">Perfil</a></li>
+        </ul>
+    </header>
+    
+    <main>
+        <section>
+            <form action="Registroanimal.html" method="post">
+                <div>
+                    <label for="Nombre">Nombre:</label>
+                    <input type="input" placeholder="Nombres" id="Nombre" required>
+                </div>
+
+                <div>
+                    <label for="Apellidos">Apellidos:</label>
+                    <input type="input" placeholder="Paterno y Materno" id="Apellidos" required>
+                </div>
+                
+                <div>
+                    <label for="Edad">Fecha de nacimiento:</label>
+                    <input type="number" min="18" placeholder="Tienes que tener mas de 18 años" name="Edad" required>
+                </div>
+
+                <div>
+                    <label for="Correo">Correo electrónico:</label>
+                    <input type="email" placeholder="Ej. correo@e-mail.com" name="Correo" required>
+                </div>
+
+                <div>
+                    <label for="contrasena">Contraseña:</label>
+                    <input type="password"  placeholder="password" id="contrasena" name="contrasena" required>
+                </div>
+
+                <div>
+                    <label for="Numero">Numero telefónico:</label>
+                    <input type="tel" pattern="[0-9]{10}" placeholder="Ej. 8123456789" name="Numero">
+                </div>
+
+
+                <div>
+                    <label for="Genero">Género:</label>
+                    <select name="Genero">
+                        <option value="Inespecifico">Prefiero no decir</option>
+                        <option value="Hombre">Hombre</option>
+                        <option value="Mujer">Mujer</option>
+                    </select>
+                </div> 
+                
+                <input type="submit" id="Enviar" name="Enviar" value="Enviar">     
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="social-icons">
+                <a href="https://www.facebook.com/share/14yqmKFpqm/?mibextid=LQQJ4d" class="fa-brands fa-facebook"><span class="icon facebook"></span></a>
+                <a href="https://www.instagram.com/muunder.work/" class="fa-brands fa-instagram"><span class="icon instagram"></span></a>
+                <a href="https://x.com/MuunderWork" class="fa-brands fa-x-twitter"><span class="icon twitter"></span></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <table border="0">
+                <tbody>
+                    <tr>
+                        <td rowspan="3"> <a href="Footer/Ubicacion.html">Ubicación</a> </td>
+                        <td> <a href="Footer/Politpriv.html">Políticas de privacidad</a></td>
+                        <td> <a href="Footer/Pregfrec.html">Preguntas Frecuentes</a> </td>
+                    </tr>
+                    <tr>
+                        <td> <a href="Footer/Normas.html">Normas de la comunidad</a></td>
+                        <td> <a href="Footer/Quienesomos.html">Quiénes somos</a></td>
+                    </tr> 
+                    <tr>
+                        <td> <a href="Footer/Terminos y condiciones.html">Términos y condiciones</a> </td>
+                        <td> <a href="Footer/Contacto.html">Contacto</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>  
+    </footer>
+</body>
+</html>
